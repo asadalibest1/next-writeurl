@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/faqs.css'
+import './css/faqs.css'
 import ContentBox from '../Components/contentBox'
 const FAQs = () => {
     return (

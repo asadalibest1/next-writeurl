@@ -15,7 +15,7 @@ export const ReadEditor = () => {
     setTimeout(() => {
 
         const script = document.createElement('script');
-        script.src = "https://api.writeurl.com/script.js";
+        script.src = "http://localhost:9000/script.js";
         script.async = true;
         document.body.appendChild(script);
         console.log("p", param)

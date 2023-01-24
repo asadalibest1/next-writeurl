@@ -1,5 +1,4 @@
 import React from 'react'
-import icon2 from '../layer.png'
 import { features } from '../Data/features'
 import Image from '@/assests/elements/Image'
 import Head from '@/app/head'

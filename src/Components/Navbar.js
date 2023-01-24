@@ -15,7 +15,7 @@ const Navbar = () => {
     useEffect(() => {
         setTimeout(() => {
             const script = document.createElement('script');
-            script.src = "https://api.writeurl.com/script.js";
+            script.src = "http://localhost:9000/script.js";
             script.async = true;
             document.body.appendChild(script);
             window.nbe.site.display_feedback();

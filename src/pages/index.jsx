@@ -6,8 +6,6 @@ import WriteUrl from '../Components/WriteUrl.js'
 import './css/homePage.css'
 import './css/globals.css'
 import './css/editor.css'
-import { useEffect } from 'react'
-// import Head from './head.jsx'
 
 export var BaseURL = "https://api.writeurl.com"
 
@@ -21,7 +19,6 @@ export const HomePage = () => {
 
   return (
     <>
-      {/* <Head /> */}
       <Navbar />
       <div className='wrapper_container main-wrapper-container'>
         <div className='main-content'>
