@@ -1,0 +1,105 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+    margin-top: 15px;
+    margin-right: 12px;
+    padding: 6px 15px;
+    /* align-items: center; */
+
+}
+
+.iconsStyle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 5px 1px 5px #ccc;
+}
+
+.navContainer p a,
+.actions-btns {
+    width: 24px;
+    height: 24px;
+    /* padding: 15px 11px; */
+    background-color: rgb(80, 80, 80);
+    border-radius: 50px;
+    margin: 2px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    line-height: 0px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer .writeUrl a {
+    box-shadow: none;
+    background-color: #fff;
+    width: auto !important;
+    font-size: 19px;
+    padding: 20px 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    color: black !important;
+}
+
+.navContainer .writeUrl a:hover {
+    color: #0d6efd
+}
+
+.navContainer p,
+.navContainer p a,
+.actions-btns .navContainer p a *,
+.actions-btns * {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.tooltipCustomclass {
+    background-color: #FFFDCC !important;
+    /*tooltip color */
+
+    color: black !important;
+    height: 30px !important;
+    width: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 0.2px solid black !important;
+    border-radius: 0% !important;
+    font-size: 12px !important;
+
+}
+
+.tooltipCustomfeedbackclass {
+    background-color: #fffeee !important;
+    /*tooltip color */
+
+    color: black !important;
+    height: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 0.2px solid black !important;
+    border-radius: 0% !important;
+    font-size: 12px !important;
+
+}
+
+/* 
+.writeUrll{
+    width: 90px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.writeUrll *{
+    color: #000000;
+
+} */

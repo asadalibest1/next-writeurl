@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: comic-sans;
+  src: url("../../app/Qdbettercomicsansalternates-z8823.ttf");
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper_container {
+  /* max-width: 1120px; */
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 22px;
+}
+
+.quill-editor iframe {
+  pointer-events: none;
+}
+
+.ql-formats {
+  margin-right: 7px !important;
+}
+
+.wu-img {
+  width: 100% !important;
+}
+
+.wu-root .wu-img {
+  width: auto !important;
+  max-width: 100%;
+}
+
+.main-content {
+  width: 70%;
+}
+
+.side-advertise {
+  width: 25%;
+  /* border: 1px solrgba(126, 92, 92, 0.102)01A; */
+  right: 2%;
+  position: fixed;
+  width: 28%;
+  height: 100vh;
+  padding-bottom: 45px;
+}
+
+
+.side-advertise .footer-container,
+.side-advertise .sidebar-ad,
+.side-advertise .headerSection {
+  border: 1px solid #0000001A;
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* @media only screen and (min-width:992px) {
+  .wrapper_container{
+    flex-direction: column-reverse;
+  }
+  .side-advertise{
+    position: relative;
+    width: 100%;
+    right: auto;
+    height: auto;
+  }
+  .main-content{
+    width: 100%;
+  }
+  .main-wrapper-container{
+    flex-direction: column;
+  }
+  .main-wrapper-container .side-advertise{
+  margin-bottom: 120px;
+  }
+  } */
+
+
+@media only screen and (max-width:600px) {
+  .wrapper_container {
+    flex-direction: column;
+  }
+
+  .side-advertise {
+    position: relative;
+    width: 100%;
+    right: auto;
+    height: auto;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .main-wrapper-container {
+    flex-direction: column;
+  }
+
+  .main-wrapper-container .side-advertise {
+    /* margin-bottom: 120px; */
+    padding: 0px;
+  }
+
+
+
+  .headerSection:nth-child(1) {
+    border-bottom: none;
+    margin-bottom: 0px;
+
+  }
+
+  .footer-container {
+    border-top: none !important;
+    margin-bottom: 0px;
+  }
+
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+  .wu-root .wu-img {
+    width: auto !important;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.text-editor {
+  width: 1086px;
+  margin: 0 auto;
+}
+
+.ql-editor {
+  min-height: 100px;
+}
+
+
+.text-editor-toolbar .ql-editor {
+  max-height: 100px;
+  background-color: red;
+}
+
+div.editor_container {
+  /* width: 70% !important; */
+}
+
+.wu-format-panel {
+  /* width: 70% !important; */
+}
+
+.publish-container,
+.readcontainer {
+  width: 69.1%;
+  border: 1px solid #0000001A;
+  /* margin-top: 1%; */
+  padding: 0px 10px;
+  /* padding-top: 33px; */
+  /* margin-bottom: 1%; */
+  /* border-radius: 5px; */
+  overflow-x: scroll;
+}
+
+.readcontainer {
+  padding-top: 13px;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.publish_share_mobile {
+  display: none;
+  background-color: red;
+}
+
+
+@media only screen and (max-width:600px) {
+  div.editor_container {
+      width: 100% !important;
+      /* position: inherit; */
+  }
+
+  .wu-format-panel {
+      width: 100% !important;
+  }
+
+  .publish-container,
+  .readcontainer {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .publish_share_desktop {
+      display: none;
+  }
+
+  .publish_share_mobile {
+      display: block;
+  }
+
+}
+
+

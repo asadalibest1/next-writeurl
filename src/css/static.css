@@ -1,0 +1,30 @@
+.static {
+    font-size: 17px;
+    font-family: Arial;
+    margin: 60px auto;
+    width: 93%;
+
+}
+
+
+.static>div {
+    margin: 22px 0px;
+    font-size: 17px;
+
+
+}
+
+.adcontactContainer {
+    border: 1px solid rgb(211, 201, 201);
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 80px;
+    margin: 10px auto;
+    width: 50%;
+    background-image: url('../assets/ad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}

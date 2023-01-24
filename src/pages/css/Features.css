@@ -1,0 +1,92 @@
+.divOfBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.outerBoxdiv {
+    text-align: center;
+    width: 242px;
+    margin: 45px 1px;
+
+}
+
+.featuresIcon {
+    margin: 5px 0;
+}
+
+.featuresHeading {
+    margin: 10px 0;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: black;
+
+}
+
+.featuresText {
+    text-align: left;
+    height: 150px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    /* width: 200px; */
+    color: black;
+}
+.demo-editor{
+    border: 1px solid rgb(200, 200, 200);
+    /* width: 19%; */
+    padding: 0px 10px;
+    overflow-y: scroll;
+    height: 650px;
+}
+
+.horizontalLine {
+    margin: 20px 20px;
+    height: 3px;
+    background: gray
+}
+.feature-demo{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.feature-demo h2{
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+.main-demo-editor{
+    width: 49%;
+}
+@media only screen and (max-width: 800px) {
+    .outerBoxdiv {
+        margin: 0px;
+        margin-bottom: 20px;
+        /* width: 80%; */
+    }
+
+}
+
+
+@media only screen and (max-width: 520px) {
+    .outerBoxdiv {
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+.feature-demo{
+    flex-direction: column;
+}
+.main-demo-editor{
+    width: 100%;
+    margin-top: 10px;
+}
+.demo-editor{
+width: 100%;
+margin-top: 10px;
+}
+}

@@ -1,0 +1,209 @@
+.outerDiv {
+    text-align: center;
+    /* margin-top: 5px; */
+    font-weight: bold;
+    overflow: auto;
+    /* max-height: 650px; */
+    padding-bottom: 36px;
+    height: 100%;
+}
+
+
+.adimage {
+    width: 80%;
+    height: auto
+}
+
+.outerDiv p {
+    /* margin: 10px 0px 20px 0px;
+    font-size: 17px;
+    text-align: center; */
+
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.footer-container p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+
+.footer-container-1 p {
+    /* background-color: green; */
+    display: flex;
+    align-items: flex-end;
+    line-height: 22px;
+
+}
+
+.outerDiv h2 {
+    /* margin: 10px 0px 20px 0px;
+    font-size: 17px;
+    text-align: center; */
+
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.outerDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.writeURLheading {
+    font-size: 60px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 35px;
+    font-family: Helvetica, sans-serif;
+}
+
+.animatedheadingDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.animatedHeading {
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    /* word-spacing: 2px; */
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.Typewriter__wrapper {
+    color: red;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.startWritingBtn {
+    margin: 5px 0;
+    padding: 6px 30px;
+    border-radius: 30px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 19px;
+    font-family: Helvetica, sans-serif;
+}
+
+.lastHeading {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 25px;
+    color: black;
+    padding: 5px 0px;
+    margin: auto 20px;
+}
+
+.advertise-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* line-height: 22px; */
+}
+
+.advertise-footer a {
+    position: unset !important;
+}
+
+@media only screen and (min-width:992px) {
+    .outerDiv h2 {
+        margin-top: 0px;
+    }
+
+    .startWritingBtn {
+        margin-top: 0px;
+    }
+
+    .outerDiv p {
+        margin-top: 0px;
+        font-size: 17px;
+    }
+
+    .adimage {
+        height: 200px
+    }
+
+    .advertise-footer {
+        margin-top: 2%;
+    }
+
+    .footer-container a {
+        font-size: 14px;
+        margin-top: 0px;
+        line-height: 22px;
+
+    }
+
+    .startWritingBtn {
+        margin: 5px 0;
+        padding: 3px 30px;
+        font-size: 17px;
+
+    }
+
+    .footer-container p {
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .animatedHeading>* {
+        display: block;
+    }
+
+    .animatedHeading {
+        display: block;
+    }
+
+    .lastHeading {
+        font-size: 25px;
+        font-weight: normal;
+        line-height: 25px;
+        color: black;
+        padding: 5px 0px;
+        margin: 40px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .lastHeading {
+        font-size: 20px;
+        margin: 10px 20px;
+    }
+
+    .startWritingBtn {
+        margin: 23px 0;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar-ad {
+        display: none;
+    }
+
+    .footer-container {
+        left: 1%;
+        width: 93%
+    }
+    .footer-container a {
+        font-size: 14px;
+        margin-top: 0px;
+        line-height: 32px;
+
+    }}

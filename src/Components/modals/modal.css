@@ -1,0 +1,167 @@
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.5rem 1rem !important; */
+
+}
+.modal-header-1{
+    display: flex;
+    justify-content: flex-start;
+    width: 105%;
+   
+}
+
+.modal-header-e-1{
+    display: flex;
+    /* justify-content: flex-start; */
+    width: 103%;
+   
+}
+
+.modal-header h5{
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-header p{
+    /* margin-left: 20px; */
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-body-1{
+  
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: self-start;
+
+ 
+}
+
+.addedone{
+    overflow-wrap:anywhere;
+}
+.modal-body-1 h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-body-1 p{
+    font-size: 14px;
+    margin-left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.modal-body-1 a{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-body-1 button{
+border-radius: 5px;
+padding: 0px 5px;
+margin: 0 2px;
+}
+/* .modal-body-1 > div{
+margin-left: 10px;
+} */
+.modal-body-1 textarea{
+margin-left: 10px;
+width: 250px;
+}
+
+
+.added-three{
+display: flex;
+flex-wrap: wrap;
+}
+.textArea{
+    margin-left: 8% !important;
+}
+.closebtn{
+border-radius: 3px;
+padding: 0px 5px;
+margin: 0 2px;
+border :0.5px gray solid
+}
+
+.closebtn-1{
+    border-radius: 3px;
+    padding: 0px 5px;
+    margin: 0 2px;
+    border :0.5px gray solid;
+    height: 25px;
+    font-size: small;
+    }
+
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.modal-content{
+    border-radius: 3%;
+    width:98%;
+  
+}
+.customModal{
+    border: 10px solid rgb(75, 68, 68);
+  
+    border-radius: 2%;
+}
+.customfeedbackModal{
+    width:650px;
+    height: 500px;
+}
+
+
+.btnsofModal{
+    border: 0.3px gray solid;
+    height:25px;
+    margin: 0 3px !important;
+    align-items: center;
+    font-size: 14px !important;
+    border-radius: 3px !important;
+
+    
+}
+.btnsofModalP{
+    border: 0.3px rgb(16, 122, 48) solid;
+    height:25px;
+    margin: 0 3px !important;
+    color:  rgb(16, 122, 48);
+    font-size: 14px;
+    border-radius: 3px !important;
+}
+.sendBtn{
+margin-left: 25.6%
+}
+
+
+@media screen and (max-width:992px) {
+
+ 
+    .sendBtn{
+      margin-left: 38%
+      }
+    }
+
+
+@media screen and (max-width: 512px) {
+
+    .added-three{
+        display: inline-flex;
+    }
+  .textArea{
+      margin-left: 0% !important;
+  }
+  .sendBtn{
+    margin-left: 0%;
+    }
+  }
+
+
+ 
