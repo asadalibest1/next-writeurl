@@ -17,7 +17,7 @@ export const Editor = () => {
 
     const loadScripts = async () => {
         const Newscript = document.createElement("script");
-        Newscript.src = "http://localhost:9000/last.js";
+        Newscript.src = "https://api.writeurl.com/last.js";
         Newscript.async = true;
         document.body.appendChild(Newscript);
     };
@@ -25,7 +25,7 @@ export const Editor = () => {
     useEffect(() => {
 
         const script = document.createElement("script");
-        script.src = "http://localhost:9000/script.js";
+        script.src = "https://api.writeurl.com/script.js";
 
         script.async = true;
         document.body.appendChild(script);
@@ -47,7 +47,7 @@ export const Editor = () => {
         //   id: param.id,
         //   read: param.read,
         //   write: param.write
-        // }, false, 'ws://localhost:9000/operations', false, true, function (key, value) {
+        // }, false, 'wss://api.writeurl.com/operations', false, true, function (key, value) {
         //   //console.log(key, value);
         // });
     }, []);
@@ -84,7 +84,7 @@ export const Editor = () => {
                         <a id="feedback" class="circle_button" style={{ top: "23px", right: "62px" }} title="Feedback">
                             !
                         </a>
-                        <a id="faq" class="circle_button" style={{ top: "23px", right: "31px" }} href="/faqs" title="FAQ">
+                        <a id="faq" class="circle_button" style={{ top: "23px", right: "31px" }} href="http://localhost:3000/publish/mtr41inolg5jee4phz31" target="_blank" title="FAQ">
                             ?
                         </a>
                     </div>

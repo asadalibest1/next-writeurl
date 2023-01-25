@@ -26,7 +26,7 @@ export default function Head() {
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" precedence="default" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css?family=Roboto" precedence="default" rel="stylesheet" />
 
-      <Script async src="http://localhost:9000/script.js" defer></Script>
+      <Script async src="https://api.writeurl.com/script.js" defer></Script>
       <Script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></Script>
 
     </>

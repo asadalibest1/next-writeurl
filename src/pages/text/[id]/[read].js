@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react";
 import WriteUrl from "../../../Components/WriteUrl";
 import Navbar from "../../../Components/Navbar";
 import { useRouter } from "next/router";
-// import '../../../app/homePage.module.css'
-// import '../../../app/globals.module.css'
-// import '../../../app/editor.module.css'
-// import '../../static.css';
-// import '../../styles.css';
 export const ReadEditor = () => {
 
     const router = useRouter();
@@ -15,25 +10,22 @@ export const ReadEditor = () => {
     setTimeout(() => {
 
         const script = document.createElement('script');
-        script.src = "http://localhost:9000/script.js";
+        script.src = "https://api.writeurl.com/script.js";
         script.async = true;
+
         document.body.appendChild(script);
         console.log("p", param)
 
 
-            window.nbe.site.embed_read('editor', {
-                id: param.id,
-                read: param.read,
-            });
+        window.nbe.site.embed_read('editor', {
+            id: param.id,
+            read: param.read,
+        });
+
+        // const ele = document.getElementById('editor');
+        // document.getElementById('editor').innerHTML = ele.innerHTML
+        // console.log('ab',);
     }, 2000);
-
-    // window.nbe.site.embed_read('text', {
-    //   id: param.id,
-    //   read: param.read,
-    //   write: param.write
-    // })
-
-    // })
 
 
     const [state, setState] = React.useState({ value: null, delta: null });
@@ -68,5 +60,8 @@ export const ReadEditor = () => {
         </div>
     );
 };
+
+
+
 
 export default ReadEditor;

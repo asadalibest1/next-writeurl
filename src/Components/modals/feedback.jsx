@@ -19,7 +19,7 @@ const Feedback = (props) => {
     // setData({...data,type:"feedback"})
     e.preventDefault()
 
-    // axios.post('http://localhost:9000/xhr/feedback',
+    // axios.post('https://api.writeurl.com/xhr/feedback',
     //  { 
     //       'Accept': '*/*', 
     //       'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7,zh;q=0.6,ar-SA;q=0.5,ar;q=0.4,pt-BR;q=0.3,pt;q=0.2,ru-RU;q=0.1,ru;q=0.1,he-IL;q=0.1,he;q=0.1,es-ES;q=0.1,es;q=0.1,it-IT;q=0.1,it;q=0.1,fr-FR;q=0.1,fr;q=0.1,th-TH;q=0.1,th;q=0.1,de-DE;q=0.1,de;q=0.1,ja-JP;q=0.1,ja;q=0.1,ko-KR;q=0.1,ko;q=0.1,tr-TR;q=0.1,tr;q=0.1,cs-CZ;q=0.1,cs;q=0.1,fa-IR;q=0.1,fa;q=0.1,hu-HU;q=0.1,hu;q=0.1,nl-NL;q=0.1,nl;q=0.1,pl-PL;q=0.1,pl;q=0.1,sk-SK;q=0.1,sk;q=0.1,uk-UA;q=0.1,uk;q=0.1,ug-CN;q=0.1,ug;q=0.1,vi-VN;q=0.1,vi;q=0.1,ro-RO;q=0.1,ro;q=0.1,ms-MY;q=0.1,ms;q=0.1,el-GR;q=0.1,el;q=0.1,da-DK;q=0.1,da;q=0.1,sv-SE;q=0.1,sv;q=0.1,fi-FI;q=0.1,fi;q=0.1', 
@@ -35,7 +35,7 @@ const Feedback = (props) => {
     // .catch((e)=>console.log(e))
     // var config = {
     //   method: 'post',
-    //   url: 'http://localhost:9000/xhr/feedback',
+    //   url: 'https://api.writeurl.com/xhr/feedback',
     //   headers: { 
     //     'Accept': '*/*', 
     //     'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7,zh;q=0.6,ar-SA;q=0.5,ar;q=0.4,pt-BR;q=0.3,pt;q=0.2,ru-RU;q=0.1,ru;q=0.1,he-IL;q=0.1,he;q=0.1,es-ES;q=0.1,es;q=0.1,it-IT;q=0.1,it;q=0.1,fr-FR;q=0.1,fr;q=0.1,th-TH;q=0.1,th;q=0.1,de-DE;q=0.1,de;q=0.1,ja-JP;q=0.1,ja;q=0.1,ko-KR;q=0.1,ko;q=0.1,tr-TR;q=0.1,tr;q=0.1,cs-CZ;q=0.1,cs;q=0.1,fa-IR;q=0.1,fa;q=0.1,hu-HU;q=0.1,hu;q=0.1,nl-NL;q=0.1,nl;q=0.1,pl-PL;q=0.1,pl;q=0.1,sk-SK;q=0.1,sk;q=0.1,uk-UA;q=0.1,uk;q=0.1,ug-CN;q=0.1,ug;q=0.1,vi-VN;q=0.1,vi;q=0.1,ro-RO;q=0.1,ro;q=0.1,ms-MY;q=0.1,ms;q=0.1,el-GR;q=0.1,el;q=0.1,da-DK;q=0.1,da;q=0.1,sv-SE;q=0.1,sv;q=0.1,fi-FI;q=0.1,fi;q=0.1', 
@@ -74,7 +74,7 @@ const Feedback = (props) => {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:9000/xhr/feedback", requestOptions)
+    fetch("https://api.writeurl.com/xhr/feedback", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));

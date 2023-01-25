@@ -1,11 +1,11 @@
 import axios from "axios";
 import { BaseURL } from "./pages/index";
 
-
-export const GetPublished = () =>{
-return new Promise((resolve,reject)=>{
-    axios.get(`${BaseURL}/getPubs`)
-    .then((res)=>resolve(res))
-    .catch((e)=>reject(e))
-})
-}
+export const GetPublished = () => {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(`${BaseURL}/getPubs`)
+      .then((res) => resolve(res))
+      .catch((e) => reject(e));
+  });
+};

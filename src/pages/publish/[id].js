@@ -11,14 +11,16 @@ import Navbar from "../../Components/Navbar";
 import { BaseURL } from "../../pages/index";
 import { FaShare } from 'react-icons/fa'
 import Overlay from 'react-bootstrap/Overlay';
+const baseURL = `${BaseURL}/publish/`;
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-export const Publish = () => {
+export const Publish = (props) => {
+
+    console.log('props', props);
     const router = useRouter();
     const param = router.query;
     const [html, setHTML] = useState({ __html: "" });
-    const baseURL = `${BaseURL}/publish/`;
     const [show, setShow] = useState(false);
 
     const basePath = `http://localhost:3000/publish/${param.id}`;
@@ -26,9 +28,10 @@ export const Publish = () => {
 
 
 
-    setTimeout(() => {
-        createMarkup();
-    }, 1500);
+    // setTimeout(() => {
+    //     createMarkup();
+    // }, 1500);
+
 
     async function createMarkup() {
         try {
@@ -44,6 +47,7 @@ export const Publish = () => {
         }
 
     }
+
 
     return (
         <>
@@ -64,8 +68,9 @@ export const Publish = () => {
 
             <div className="wrapper_container">
                 <div className='publish-container'>
-                    <div dangerouslySetInnerHTML={html} />
-                </div>
+                    {
+                        props?.res?.__html && <div dangerouslySetInnerHTML={props.res} />
+                    }                </div>
                 <div className='side-advertise'>
                     <WriteUrl />
                 </div>
@@ -116,5 +121,23 @@ export const Publish = () => {
 
     )
 };
+
+
+export async function getServerSideProps(context) {
+
+
+    const param = context.query;
+    console.log(param.id);
+    let response = await fetch(`${baseURL}${param.id}`, { method: "GET" });
+    const backendHtmlString = await response.text();
+
+    return {
+        props: {
+            res: { __html: backendHtmlString }
+
+        },
+
+    };
+}
 
 export default Publish;
