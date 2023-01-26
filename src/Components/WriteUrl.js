@@ -13,7 +13,7 @@ const WriteUrl = () => {
         setTimeout(() => {
 
             const script = document.createElement('script');
-            script.src = "https://api.writeurl.com/script.js";
+            script.src = "http://localhost:9000/script.js";
             script.async = true;
             document.body.appendChild(script);
             window.nbe.site.display_feedback();
@@ -21,7 +21,7 @@ const WriteUrl = () => {
     }, [])
     return (
         <>
-      <div className="outerDiv">
+            <div className="outerDiv">
 
                 <div className="headerSection">
 
@@ -46,8 +46,8 @@ const WriteUrl = () => {
                         <GoogleAds />
 
                         {/* <button className="addgoogle" style={{ left: '12%' }}>Ads by Google</button>
-          <img className="adimage" src={logo} />
-          <button className="crossgoogle" style={{ left: '12%' }}><img src={addcross} /></button> */}
+                            <img className="adimage" src={logo} />
+                            <button className="crossgoogle" style={{ left: '12%' }}><img src={addcross} /></button> */}
                     </div>
                 </div>
 

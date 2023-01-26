@@ -14,6 +14,7 @@ import Overlay from 'react-bootstrap/Overlay';
 const baseURL = `${BaseURL}/publish/`;
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Head from "next/head";
 
 export const Publish = (props) => {
 
@@ -33,24 +34,37 @@ export const Publish = (props) => {
     // }, 1500);
 
 
-    async function createMarkup() {
-        try {
-            //dummy
-            // http://localhost:8000/backed_api/html_response/?user_email=chriss%40comtura.ai
-            let response = await fetch(`${baseURL}${param.id}`)
-            const backendHtmlString = await response.text()
+    // async function createMarkup() {
+    //     try {
+    //         //dummy
+    //         // http://localhost:8000/backed_api/html_response/?user_email=chriss%40comtura.ai
+    //         let response = await fetch(`${baseURL}${param.id}`)
+    //         const backendHtmlString = await response.text()
 
-            console.log(backendHtmlString)
-            setHTML({ __html: backendHtmlString });
-        } catch (error) {
-            console.log(error);
-        }
+    //         console.log(backendHtmlString)
+    //         setHTML({ __html: backendHtmlString });
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
 
-    }
+    // }
+    // console.log('qw', props.res.__html.querySelector(".editor p").innerHTML);
 
+    const [title, settitle] = useState('online text editor - WriteURL');
+    const [desc, setdesc] = useState('WriteURL is a free online text editor for writing. Collaborate in real-time, simple sharing, work offline, no registration, no password, always free.');
+    useEffect(() => {
+        const _title = document?.querySelector(".editor p").innerHTML;
+        setdesc(_title ? _title : desc);
+        settitle(_title ? _title : title);
+    }, [])
 
     return (
         <>
+            <Head>
+                <meta name="description" content={desc} />
+                <title>{title}</title>
+            </Head>
+
             <Navbar />
 
             <div className="publish_share_mobile">
@@ -130,7 +144,6 @@ export async function getServerSideProps(context) {
     console.log(param.id);
     let response = await fetch(`${baseURL}${param.id}`, { method: "GET" });
     const backendHtmlString = await response.text();
-
     return {
         props: {
             res: { __html: backendHtmlString }

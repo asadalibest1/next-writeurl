@@ -17,7 +17,7 @@ export const Editor = () => {
 
     const loadScripts = async () => {
         const Newscript = document.createElement("script");
-        Newscript.src = "https://api.writeurl.com/last.js";
+        Newscript.src = "http://localhost:9000/last.js";
         Newscript.async = true;
         document.body.appendChild(Newscript);
     };
@@ -25,7 +25,7 @@ export const Editor = () => {
     useEffect(() => {
 
         const script = document.createElement("script");
-        script.src = "https://api.writeurl.com/script.js";
+        script.src = "http://localhost:9000/script.js";
 
         script.async = true;
         document.body.appendChild(script);
@@ -47,7 +47,7 @@ export const Editor = () => {
         //   id: param.id,
         //   read: param.read,
         //   write: param.write
-        // }, false, 'wss://api.writeurl.com/operations', false, true, function (key, value) {
+        // }, false, 'ws://localhost:9000/operations', false, true, function (key, value) {
         //   //console.log(key, value);
         // });
     }, []);

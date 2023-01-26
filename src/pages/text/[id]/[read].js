@@ -10,17 +10,17 @@ export const ReadEditor = () => {
     setTimeout(() => {
 
         const script = document.createElement('script');
-        script.src = "https://api.writeurl.com/script.js";
+        script.src = "http://localhost:9000/script.js";
         script.async = true;
 
         document.body.appendChild(script);
         console.log("p", param)
 
 
-        window.nbe.site.embed_read('editor', {
-            id: param.id,
-            read: param.read,
-        });
+       console.log('asad', window.nbe.site.embed_read('editor', {
+        id: param.id,
+        read: param.read,
+    }));;
 
         // const ele = document.getElementById('editor');
         // document.getElementById('editor').innerHTML = ele.innerHTML
